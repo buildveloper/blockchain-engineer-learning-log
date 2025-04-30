@@ -13,3 +13,11 @@ function generateId(){
     transactionId = senderName + receiverName + transactionAmount;
     return "Transaction ID: " + transactionId;
 }
+
+console.log(generateId());
+
+if(transactionAmount > 50){
+    console.log("Amount is valid: True")
+} else{
+    console.log("Amount is valid: False")
+};
