@@ -10,7 +10,7 @@ bonusesCollected = prompt("Enter number of bonuses collected: ");
 bonusesCollected = bonusesCollected * 1;
 
 let totalScore = enemiesDefeated + bonusesCollected;
-console.log("Total Score: " + totalScore);
+console.log("Total Score                        : " + totalScore);
 
 if(totalScore >= 50){
     console.log("can level up");
