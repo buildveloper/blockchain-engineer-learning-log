@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Digital Store</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>MY DIGITAL STORE</h1>
+        </header>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <label for="category">Choose a category:</label>
+            <select id="category" name="category">
+            <option value="technology">All</option>
+            <option value="health">Books</option>
+            <option value="finance">Courses</option>
+            <option value="education">Softwares</option>
+            </select>
+            
+            <!-- filter button -->
+             <button>Filter</button>
+        </section>
+
+        <!-- End of filter Section -->
+
+        <!-- Product Grid Section -->
+        <section aria-label="Product Listing">
+            <article class="product-card">
+              <h2 class="product-name">Book One</h2>
+              <p class="product-category">Category: books</p>
+              <p class="product-price">$59.99</p>
+              <button type="button">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <h2 class="product-name">How to build a digital store</h2>
+                <p class="product-category">Category: Courses</p>
+                <p class="product-price">$69.99</p>
+                <button type="button">Add to Cart</button>
+              </article>
+
+              <article class="product-card">
+                <h2 class="product-name">Canva</h2>
+                <p class="product-category">Category: Softwares</p>
+                <p class="product-price">$99.99</p>
+                <button type="button">Add to Cart</button>
+              </article>
+
+              <article class="product-card">
+                <h2 class="product-name">Learn Git</h2>
+                <p class="product-category">Category: Courses </p>
+                <p class="product-price">$9.99</p>
+                <button type="button">Add to Cart</button>
+              </article>
+
+              <article class="product-card">
+                <h2 class="product-name">Slack</h2>
+                <p class="product-category">Category: Softwares</p>
+                <p class="product-price">$200</p>
+                <button type="button">Add to Cart</button>
+              </article>
+
+              <article class="product-card">
+                <h2 class="product-name">Book Two</h2>
+                <p class="product-category">Category: Books</p>
+                <p class="product-price">$299.99</p>
+                <button type="button">Add to Cart</button>
+              </article>
+        </section>
+        <!-- End Of Product grid -->
+
+        <!-- View Cart Button -->
+        <section>
+            <button class="view-cart">View Cart</button>
+        </section>
+    </body>
+</html>
