@@ -17,16 +17,16 @@
 
         <!-- Filter Section -->
         <section class="filter-section">
-            <label for="category">Choose a category:</label>
-            <select id="category" name="category">
-            <option value="technology">All</option>
-            <option value="health">Books</option>
-            <option value="finance">Courses</option>
-            <option value="education">Softwares</option>
-            </select>
-            <!-- filter button -->
-             <button>Filter</button>
+        <label for="category">Choose a category:</label>
+        <select id="category" name="category">
+          <option value="all">All</option>
+          <option value="books">Books</option>
+          <option value="courses">Courses</option>
+          <option value="softwares">Softwares</option>
+        </select>
+        <button id="filterBtn">Filter</button>
         </section>
+
         <!-- End of filter Section -->
 
 
@@ -81,6 +81,20 @@
         <section>
             <button class="view-cart">View Cart</button>
         </section>
-         <!-- End Of View Cart Button -->
+        <!-- End Of View Cart Button -->
+
+
+        <!-- Modal Section -->
+            <section id="cart-modal" class="modal hidden" role="dialog" aria-modal="true">
+              <div class="modal-content">
+                <h2>Your Cart</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Total: $0.00</p>
+                <button id="close-cart">Close</button>
+              </div>
+            </section>
+        <!--  -->
+
+         <script src="digitalStore.js"></script>
     </body>
 </html>

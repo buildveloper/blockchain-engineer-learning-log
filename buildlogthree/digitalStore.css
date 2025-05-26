@@ -21,27 +21,41 @@
   /* keep it simple on both mobile & desktop */
   
   /* 2. Filter Section */
-  .filter-section {
-    background-color: #f2f2f2;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;   /* mobile: stack vertically */
-    align-items: stretch;
-    gap: 0.5rem;
-  }
-  .filter-section label,
-  .filter-section select,
-  .filter-section button {
-    font-size: 1rem;
-  }
-  .filter-section button {
-    padding: 0.5rem;
-    border: none;
-    background-color: #264653;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 4px;
-  }
+ /* Filter section layout */
+.filter-section {
+  background-color: #f2f2f2;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Dropdown */
+#category {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Filter button */
+#filterBtn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#filterBtn:hover {
+  background-color: #2980b9;
+}
   
   /* 3. Product Grid Section */
   [aria-label="Product Listing"] {
@@ -94,6 +108,70 @@
     font-size: 1rem;
     cursor: pointer;
   }
+
+  /* Modal Section */
+
+  .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+.hidden {
+  display: none;
+}
+#cart-items li {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.remove-item {
+  background-color: #e74c3c; /* red */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+  background-color: #c0392b;
+}
+
+#close-cart {
+  background-color: #3498db; /* Blue */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#close-cart:hover {
+  background-color: #2980b9;
+}
+
+
   
   /* ============================= */
   /* Desktop & Tablet Media Queries */
